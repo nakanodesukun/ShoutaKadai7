@@ -6,13 +6,15 @@
 //
 
 import UIKit
- private enum caluculateError : Error {
+enum caluculateError : Error {
 case nonAdded //"たされる数に数値を入力してください"
 case nonAdd //たす数に数値を入力して下さい
-    var massage : String{
+    //コンピューテッドプロパティ
+    var massage : String {
         switch self {
         case .nonAdded: return "たされる数に数値を入力して下さい"
         case .nonAdd: return "たす数に数値を入力して下さい"
+        
         }
     }
    
@@ -44,7 +46,7 @@ class RedViewController: UIViewController {
         } catch let error as caluculateError {
             resultLabel.text = error.massage
         } catch {
-            print("予期せぬエラーが起きました")
+            resultLabel.text = "予期せぬエラーが起きました"
         }
     }
     
