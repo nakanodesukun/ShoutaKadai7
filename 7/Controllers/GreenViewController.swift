@@ -8,7 +8,7 @@
 import UIKit
 
 class GreenViewController: UIViewController {
- let subtraction = Modal()
+ 
  //引き算
     @IBOutlet weak var firstTextField: UITextField!
     @IBOutlet weak var secondTextField: UITextField!
@@ -18,8 +18,7 @@ class GreenViewController: UIViewController {
         super.viewDidLoad()
     }
     @IBAction func subtractionButton(_ sender: Any) {
-        let value = subtraction.subtrctionCalculate(text1: firstTextField.text ?? "", text2: secondTextField.text ?? "")
-        resultLabel.text = String(value)
+       
     }
     
     
