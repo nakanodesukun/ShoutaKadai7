@@ -60,7 +60,7 @@
 		95ACE1A9277EBA44008BEE9D /* 7 */ = {
 			isa = PBXGroup;
 			children = (
-				95ACE1C3277EC926008BEE9D /* Modal */,
+				95ACE1C3277EC926008BEE9D /* Modals */,
 				95ACE1C2277EC4AE008BEE9D /* Controllers */,
 				95ACE1C6277EC94E008BEE9D /* View */,
 				95ACE1AA277EBA44008BEE9D /* AppDelegate.swift */,
@@ -81,12 +81,12 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		95ACE1C3277EC926008BEE9D /* Modal */ = {
+		95ACE1C3277EC926008BEE9D /* Modals */ = {
 			isa = PBXGroup;
 			children = (
 				95ACE1C4277EC946008BEE9D /* Modal.swift */,
 			);
-			path = Modal;
+			path = Modals;
 			sourceTree = "<group>";
 		};
 		95ACE1C6277EC94E008BEE9D /* View */ = {
@@ -107,6 +107,7 @@
 				95ACE1A3277EBA44008BEE9D /* Sources */,
 				95ACE1A4277EBA44008BEE9D /* Frameworks */,
 				95ACE1A5277EBA44008BEE9D /* Resources */,
+				957BB6FD27859B930070FB81 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -162,6 +163,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		957BB6FD27859B930070FB81 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		95ACE1A3277EBA44008BEE9D /* Sources */ = {
@@ -321,6 +342,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6KP4Y76JP4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 7/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -348,6 +370,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6KP4Y76JP4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 7/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
