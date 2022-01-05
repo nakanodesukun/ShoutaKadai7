@@ -8,23 +8,26 @@
 import UIKit
 
 class GreenViewController: UIViewController {
-let modal = Modal()
- //引き算
-    @IBOutlet weak var firstTextField: UITextField!
-    @IBOutlet weak var secondTextField: UITextField!
-    @IBOutlet weak var resultLabel: UILabel!
+    private let modal = Modal()
+    //プロパティに値を保持
+    private var corectAnswer: String? = nil
+    //引き算
+    @IBOutlet private weak var firstTextField: UITextField!
+    @IBOutlet private weak var secondTextField: UITextField!
+    @IBOutlet private weak var resultLabel: UILabel!
+
     
-   
     @IBAction func subtractionButton(_ sender: Any) {
         do {
             let result = try modal.calculate(text1: firstTextField.text ?? "", text2: secondTextField.text ?? "")
-            print(result)
+            corectAnswer = String(result)
         } catch let error as caluculateError {
-            resultLabel.text = error.massage
+            corectAnswer = error.massage
         } catch {
-            resultLabel.text = "予期せぬエラーが起きました"
+            corectAnswer = "予期せぬエラーが発生しました"
         }
+        resultLabel.text = corectAnswer
     }
-    
-    
+
+
 }

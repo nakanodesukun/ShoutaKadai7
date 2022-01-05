@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		95ACE1AB277EBA44008BEE9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95ACE1AA277EBA44008BEE9D /* AppDelegate.swift */; };
 		95ACE1AD277EBA44008BEE9D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95ACE1AC277EBA44008BEE9D /* SceneDelegate.swift */; };
-		95ACE1AF277EBA44008BEE9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95ACE1AE277EBA44008BEE9D /* ViewController.swift */; };
 		95ACE1B2277EBA44008BEE9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95ACE1B0277EBA44008BEE9D /* Main.storyboard */; };
 		95ACE1B4277EBA46008BEE9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95ACE1B3277EBA46008BEE9D /* Assets.xcassets */; };
 		95ACE1B7277EBA46008BEE9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95ACE1B5277EBA46008BEE9D /* LaunchScreen.storyboard */; };
@@ -22,7 +21,6 @@
 		95ACE1A7277EBA44008BEE9D /* 7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 7.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95ACE1AA277EBA44008BEE9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95ACE1AC277EBA44008BEE9D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		95ACE1AE277EBA44008BEE9D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		95ACE1B1277EBA44008BEE9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		95ACE1B3277EBA46008BEE9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95ACE1B6277EBA46008BEE9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -79,7 +77,6 @@
 			children = (
 				95ACE1C0277EC4A7008BEE9D /* GreenViewController.swift */,
 				95ACE1BE277EC47E008BEE9D /* RedViewController.swift */,
-				95ACE1AE277EBA44008BEE9D /* ViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -173,7 +170,6 @@
 			files = (
 				95ACE1BF277EC47E008BEE9D /* RedViewController.swift in Sources */,
 				95ACE1C5277EC946008BEE9D /* Modal.swift in Sources */,
-				95ACE1AF277EBA44008BEE9D /* ViewController.swift in Sources */,
 				95ACE1AB277EBA44008BEE9D /* AppDelegate.swift in Sources */,
 				95ACE1AD277EBA44008BEE9D /* SceneDelegate.swift in Sources */,
 				95ACE1C1277EC4A7008BEE9D /* GreenViewController.swift in Sources */,

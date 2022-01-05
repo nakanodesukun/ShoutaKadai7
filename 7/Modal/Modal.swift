@@ -6,13 +6,12 @@
 //
 
 import Foundation
-import UIKit
 
 enum caluculateError : Error {
-case nonAdded //"たされる数に数値を入力してください"
-case nonAdd //たす数に数値を入力して下さい
-    case minuend //引かれる数
-    case subtract //引くかず
+    case nonAdded // たされる数に数値を入力してください
+    case nonAdd // たす数に数値を入力して下さい
+    case minuend // 引かれる数
+    case subtract // 引く数
     //コンピューテッドプロパティ
     var massage : String {
         switch self {
@@ -20,10 +19,9 @@ case nonAdd //たす数に数値を入力して下さい
         case .nonAdd:   return   "たす数に数値を入力して下さい"
         case .minuend:  return  "引かれる数を入力して下さい"
         case .subtract: return "引く数を入力して下さい"
-        
         }
     }
-   
+
 }
 final class Modal {
     func addCalculate(text1: String, text2: String) throws -> Int {
