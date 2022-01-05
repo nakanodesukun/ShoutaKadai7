@@ -10,7 +10,7 @@ import UIKit
 class GreenViewController: UIViewController {
     private let modal = Modal()
     // プロパティに値を保持
-private var corectAnswer: String?
+    private var corectAnswer: String?
     // 引き算
     @IBOutlet private weak var firstTextField: UITextField!
     @IBOutlet private weak var secondTextField: UITextField!
