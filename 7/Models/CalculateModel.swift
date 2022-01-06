@@ -1,5 +1,5 @@
 //
-//  Modal.swift
+//  CalculateModel.swift
 //  7
 //
 //  Created by 中野翔太 on 2021/12/31.
@@ -23,7 +23,7 @@ enum CaluculateError: Error {
     }
 
 }
-final class Modal {
+final class Model {
     func addCalculate(text1: String, text2: String) throws -> Int {
         guard let value1 = Int(text1) else {
             throw CaluculateError.nonAdded
@@ -42,5 +42,4 @@ final class Modal {
         }
         return value1 - value2
     }
-
 }

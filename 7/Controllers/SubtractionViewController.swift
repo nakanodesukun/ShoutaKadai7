@@ -8,7 +8,7 @@
 import UIKit
 
 class GreenViewController: UIViewController {
-    private let modal = Modal()
+    private let model = Model()
     // プロパティに値を保持
     private var corectAnswer: String?
     // 引き算
@@ -18,7 +18,7 @@ class GreenViewController: UIViewController {
 
     @IBAction func subtractionButton(_ sender: Any) {
         do {
-        let result = try modal.subtactionCalculate(text1: firstTextField.text ?? "", text2: secondTextField.text ?? "")
+            let result = try model.subtactionCalculate(text1: firstTextField.text ?? "", text2: secondTextField.text ?? "")
             corectAnswer = String(result)
         } catch let error as CaluculateError {
             corectAnswer = error.massage

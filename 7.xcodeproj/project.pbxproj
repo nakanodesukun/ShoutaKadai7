@@ -14,7 +14,7 @@
 		95ACE1B7277EBA46008BEE9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95ACE1B5277EBA46008BEE9D /* LaunchScreen.storyboard */; };
 		95ACE1BF277EC47E008BEE9D /* AdditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95ACE1BE277EC47E008BEE9D /* AdditionViewController.swift */; };
 		95ACE1C1277EC4A7008BEE9D /* SubtractionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95ACE1C0277EC4A7008BEE9D /* SubtractionViewController.swift */; };
-		95ACE1C5277EC946008BEE9D /* Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95ACE1C4277EC946008BEE9D /* Calculate.swift */; };
+		95ACE1C5277EC946008BEE9D /* CalculateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95ACE1C4277EC946008BEE9D /* CalculateModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		95ACE1B8277EBA46008BEE9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95ACE1BE277EC47E008BEE9D /* AdditionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionViewController.swift; sourceTree = "<group>"; };
 		95ACE1C0277EC4A7008BEE9D /* SubtractionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractionViewController.swift; sourceTree = "<group>"; };
-		95ACE1C4277EC946008BEE9D /* Calculate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculate.swift; sourceTree = "<group>"; };
+		95ACE1C4277EC946008BEE9D /* CalculateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 		95ACE1A9277EBA44008BEE9D /* 7 */ = {
 			isa = PBXGroup;
 			children = (
-				95ACE1C3277EC926008BEE9D /* Modals */,
+				95ACE1C3277EC926008BEE9D /* Models */,
 				95ACE1C2277EC4AE008BEE9D /* Controllers */,
 				95ACE1C6277EC94E008BEE9D /* View */,
 				95ACE1AA277EBA44008BEE9D /* AppDelegate.swift */,
@@ -81,12 +81,12 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		95ACE1C3277EC926008BEE9D /* Modals */ = {
+		95ACE1C3277EC926008BEE9D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				95ACE1C4277EC946008BEE9D /* Calculate.swift */,
+				95ACE1C4277EC946008BEE9D /* CalculateModel.swift */,
 			);
-			path = Modals;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		95ACE1C6277EC94E008BEE9D /* View */ = {
@@ -107,7 +107,6 @@
 				95ACE1A3277EBA44008BEE9D /* Sources */,
 				95ACE1A4277EBA44008BEE9D /* Frameworks */,
 				95ACE1A5277EBA44008BEE9D /* Resources */,
-				957BB6FD27859B930070FB81 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -164,33 +163,13 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		957BB6FD27859B930070FB81 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi\n\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		95ACE1A3277EBA44008BEE9D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				95ACE1BF277EC47E008BEE9D /* AdditionViewController.swift in Sources */,
-				95ACE1C5277EC946008BEE9D /* Calculate.swift in Sources */,
+				95ACE1C5277EC946008BEE9D /* CalculateModel.swift in Sources */,
 				95ACE1AB277EBA44008BEE9D /* AppDelegate.swift in Sources */,
 				95ACE1AD277EBA44008BEE9D /* SceneDelegate.swift in Sources */,
 				95ACE1C1277EC4A7008BEE9D /* SubtractionViewController.swift in Sources */,
