@@ -8,25 +8,25 @@
 import UIKit
 
 class GreenViewController: UIViewController {
-    private let model = Model()
-    // プロパティに値を保持
-    private var corectAnswer: String?
+    private let calculator = Calculator()
+  
     // 引き算
     @IBOutlet private weak var firstTextField: UITextField!
     @IBOutlet private weak var secondTextField: UITextField!
     @IBOutlet private weak var resultLabel: UILabel!
 
     @IBAction func subtractionButton(_ sender: Any) {
+        let resulutText: String?
         do {
-            let result = try model.subtactionCalculate(text1: firstTextField.text ?? "", text2: secondTextField.text ?? "")
-            corectAnswer = String(result)
-        } catch let error as CaluculateError {
-            corectAnswer = error.massage
+            let result = try calculator.subtactionCalculate(text1: firstTextField.text ?? "", text2: secondTextField.text ?? "")
+            resulutText = String(result)
+        } catch let error as CalculateError {
+            resulutText = error.massage
         } catch {
-            corectAnswer = "予期せぬエラーが発生しました"
+            resulutText = "予期せぬエラーが発生しました"
         }
         view.endEditing(true)
-        resultLabel.text = corectAnswer
+        resultLabel.text = resulutText
     }
 
 }

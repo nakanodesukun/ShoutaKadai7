@@ -8,23 +8,24 @@
 import UIKit
 
 class RedViewController: UIViewController {
-    private let model = Model()
-    private var corectAnswer: String?
+    private let calculator = Calculator()
+
     // 足し算クラス
     @IBOutlet private weak var firstTextField: UITextField!
     @IBOutlet private weak var secondTextField: UITextField!
     @IBOutlet private weak var resultLabel: UILabel!
 
     @IBAction private func additionButton(_ sender: Any) {
+        let resultText: String?
         do {
-            let result = try model.addCalculate(text1: firstTextField.text ?? "", text2: secondTextField.text ?? "")
-            corectAnswer = String(result)
-        } catch let error as CaluculateError {
-            corectAnswer = error.massage
+            let result = try calculator.addCalculate(text1: firstTextField.text ?? "", text2: secondTextField.text ?? "")
+            resultText = String(result)
+        } catch let error as CalculateError {
+            resultText = error.massage
         } catch {
-            corectAnswer = "予期せぬエラーが発生しました"
+            resultText = "予期せぬエラーが発生しました"
         }
         view.endEditing(true)
-        resultLabel.text = corectAnswer
+        resultLabel.text = resultText
     }
 }
