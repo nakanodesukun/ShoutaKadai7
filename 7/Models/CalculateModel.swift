@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum CaluculateError: Error {
+enum CalculatorError: Error {
     case nonAdded // たされる数に数値を入力してください
     case nonAdd // たす数に数値を入力して下さい
     case minuend // 引かれる数
@@ -21,9 +21,9 @@ enum CaluculateError: Error {
         case .subtract: return "引く数を入力して下さい"
         }
     }
-
 }
-final class Model {
+
+final class Calculator {
     func addCalculate(text1: String, text2: String) throws -> Int {
         guard let value1 = Int(text1) else {
             throw CaluculateError.nonAdded
@@ -33,7 +33,7 @@ final class Model {
         }
         return value1 + value2
     }
-    func subtactionCalculate(text1: String, text2: String)throws -> Int {
+    func subtactionCalculate(text1: String, text2: String) throws -> Int {
         guard let value1 = Int(text1) else {
             throw CaluculateError.minuend
         }
